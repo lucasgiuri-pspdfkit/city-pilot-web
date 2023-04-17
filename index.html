@@ -6,9 +6,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Agency - Start Bootstrap Theme</title>
+    <meta
+      name="description"
+      content="City Pilot - The new way you will discover the world"
+    />
+    <meta name="author" content="Lucas Giuri" />
+    <title>City Pilot Tours</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -351,13 +354,14 @@
         <!-- To make this form functional, sign up at-->
         <!-- https://startbootstrap.com/solution/contact-forms-->
         <!-- to get an API token!-->
-        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <form id="contactForm" name="contact" method="POST" data-netlify="true">
           <div class="row align-items-stretch mb-5">
             <div class="col-md-6">
               <div class="form-group">
                 <!-- Name input-->
                 <input
                   class="form-control"
+                  name="name"
                   id="name"
                   type="text"
                   placeholder="Your Name *"
@@ -371,6 +375,7 @@
                 <!-- Email address input-->
                 <input
                   class="form-control"
+                  name="email"
                   id="email"
                   type="email"
                   placeholder="Your Email *"
@@ -387,6 +392,7 @@
                 <!-- Phone number input-->
                 <input
                   class="form-control"
+                  name="phone"
                   id="phone"
                   type="tel"
                   placeholder="Your Phone *"
@@ -402,6 +408,7 @@
                 <!-- Message input-->
                 <textarea
                   class="form-control"
+                  name="message"
                   id="message"
                   placeholder="Your Message *"
                   data-sb-validations="required"
